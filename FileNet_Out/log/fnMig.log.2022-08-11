@@ -1,0 +1,100 @@
+2022-08-11 00:05:22,367  INFO [main] (ConfigValueLookup.java:1506) - Configuration property file search order:
+    user.dir = D:\eclipse-workspace-us\FileNet_Out
+    user.home = C:\Users\svadl
+    java.home = C:\Program Files\Java\jdk-18.0.1
+2022-08-11 00:05:22,393  INFO [main] (ConfigValueLookup.java:1644) - Loading configuration resource: FileNetBuild.properties
+2022-08-11 00:05:29,948  INFO [main] (ConfigValueLookup.java:1506) - Configuration property file search order:
+    user.dir = D:\eclipse-workspace-us\FileNet_Out
+    user.home = C:\Users\svadl
+    java.home = C:\Program Files\Java\jdk-18.0.1
+2022-08-11 00:05:29,974  INFO [main] (ConfigValueLookup.java:1644) - Loading configuration resource: FileNetBuild.properties
+2022-08-11 00:10:18,789  INFO [main] (MainProgram.java:24) - processCSV() :: Processing :: D:\eclipse-workspace-us\FileNet_Out\inputcsv.csv
+2022-08-11 00:10:18,821  INFO [main] (CEOperations.java:53) - Entered into CEOperations. 
+ no.of records we found in CSV : 3
+2022-08-11 00:10:18,821  INFO [main] (CEOperations.java:185) - Entered into getting Property Datatypes
+2022-08-11 00:10:18,851  INFO [main] (ConnectionImpl.java:32) - Configuration property file search order:
+    user.dir = D:\eclipse-workspace-us\FileNet_Out
+    user.home = C:\Users\svadl
+    java.home = C:\Program Files\Java\jdk-18.0.1
+2022-08-11 00:10:18,877  INFO [main] (ConnectionImpl.java:32) - Loading configuration resource: FileNetBuild.properties
+2022-08-11 00:10:18,905  INFO [main] (AuthnLogLog4j.java:25) - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial
+2022-08-11 00:10:18,906  WARN [main] (J2EEUtil.java:506) - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2022-08-11 00:10:19,565  INFO [main] (CEOperations.java:217) - 0 hr 0 min 0 sec	 End of getting Property Datatypes
+2022-08-11 00:10:20,133  INFO [main] (CEOperations.java:152) - Success Record No :1 Doc GUID : {B00E8982-0000-CA13-ACE5-1003E5888604} Filed in : /Retail/AOF NON IMG
+2022-08-11 00:10:20,133  INFO [main] (CEOperations.java:263) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:10:20,217  INFO [main] (CEOperations.java:152) - Success Record No :2 Doc GUID : {B00E8982-0000-C63B-8693-C96F77074D28} Filed in : /Retail/AOF NON IMG
+2022-08-11 00:10:20,217  INFO [main] (CEOperations.java:263) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:10:20,217  INFO [main] (CEOperations.java:185) - Entered into getting Property Datatypes
+2022-08-11 00:10:20,292  INFO [main] (CEOperations.java:217) - 0 hr 0 min 0 sec	 End of getting Property Datatypes
+2022-08-11 00:10:20,424  INFO [main] (CEOperations.java:152) - Success Record No :3 Doc GUID : {B00E8982-0000-C053-9275-5301D6374649} Filed in : /Retail/AOF NON IMG
+2022-08-11 00:10:20,424  INFO [main] (CEOperations.java:263) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:10:20,424  INFO [main] (CEOperations.java:175) - Total time commiting documents to filenet : 0 hr 0 min 1 sec
+3 Documents
+2022-08-11 00:10:20,424  INFO [main] (CEOperations.java:176) - Successfullrecords Count : 3
+2022-08-11 00:10:20,425  INFO [main] (CEOperations.java:177) - failureCount Count : 0
+2022-08-11 00:10:20,425  INFO [main] (MainProgram.java:58) - CSV Data size : 3
+2022-08-11 00:10:20,425  INFO [main] (MainProgram.java:85) - Total time taken for processing : D:\eclipse-workspace-us\FileNet_Out\inputcsv.csv
+0 hr 0 min 1 sec
+2022-08-11 00:10:20,425  INFO [main] (MainProgram.java:87) - 
+*********************************
+
+2022-08-11 00:11:45,173  INFO [main] (MainProgram.java:24) - processCSV() :: Processing :: D:\eclipse-workspace-us\FileNet_Out\inputcsv.csv
+2022-08-11 00:11:45,201  INFO [main] (CEOperations.java:53) - Entered into CEOperations. 
+ no.of records we found in CSV : 3
+2022-08-11 00:11:45,201  INFO [main] (CEOperations.java:185) - Entered into getting Property Datatypes
+2022-08-11 00:11:45,229  INFO [main] (ConnectionImpl.java:32) - Configuration property file search order:
+    user.dir = D:\eclipse-workspace-us\FileNet_Out
+    user.home = C:\Users\svadl
+    java.home = C:\Program Files\Java\jdk-18.0.1
+2022-08-11 00:11:45,258  INFO [main] (ConnectionImpl.java:32) - Loading configuration resource: FileNetBuild.properties
+2022-08-11 00:11:45,285  INFO [main] (AuthnLogLog4j.java:25) - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial
+2022-08-11 00:11:45,286  WARN [main] (J2EEUtil.java:506) - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2022-08-11 00:11:46,351  INFO [main] (CEOperations.java:217) - 0 hr 0 min 1 sec	 End of getting Property Datatypes
+2022-08-11 00:11:46,639  INFO [main] (CEOperations.java:152) - Success Record No :1 Doc GUID : {00108982-0000-C91F-A80E-EE80E59AFD26} Filed in : /Retail/AOF NON IMG
+2022-08-11 00:11:46,639  INFO [main] (CEOperations.java:263) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:11:46,729  INFO [main] (CEOperations.java:152) - Success Record No :2 Doc GUID : {00108982-0000-C836-AE65-CF9E6E1AD279} Filed in : /Retail/AOF NON IMG
+2022-08-11 00:11:46,729  INFO [main] (CEOperations.java:263) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:11:46,730  INFO [main] (CEOperations.java:185) - Entered into getting Property Datatypes
+2022-08-11 00:11:46,812  INFO [main] (CEOperations.java:217) - 0 hr 0 min 0 sec	 End of getting Property Datatypes
+2022-08-11 00:11:47,102  INFO [main] (CEOperations.java:152) - Success Record No :3 Doc GUID : {00108982-0000-CF55-8AF5-550D539E8519} Filed in : /Retail/AOF NON IMG
+2022-08-11 00:11:47,103  INFO [main] (CEOperations.java:263) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:11:47,103  INFO [main] (CEOperations.java:175) - Total time commiting documents to filenet : 0 hr 0 min 1 sec
+3 Documents
+2022-08-11 00:11:47,103  INFO [main] (CEOperations.java:176) - Successfullrecords Count : 3
+2022-08-11 00:11:47,103  INFO [main] (CEOperations.java:177) - failureCount Count : 0
+2022-08-11 00:11:47,103  INFO [main] (MainProgram.java:58) - CSV Data size : 3
+2022-08-11 00:11:47,103  INFO [main] (MainProgram.java:85) - Total time taken for processing : D:\eclipse-workspace-us\FileNet_Out\inputcsv.csv
+0 hr 0 min 1 sec
+2022-08-11 00:11:47,103  INFO [main] (MainProgram.java:87) - 
+*********************************
+
+2022-08-11 00:17:08,508  INFO [main] (MainProgram.java:24) - processCSV() :: Processing :: D:\eclipse-workspace-us\FileNet_Out\inputcsv.csv
+2022-08-11 00:17:08,534  INFO [main] (CEOperations.java:53) - Entered into CEOperations. 
+ no.of records we found in CSV : 3
+2022-08-11 00:17:08,534  INFO [main] (CEOperations.java:181) - Entered into getting Property Datatypes
+2022-08-11 00:17:08,563  INFO [main] (ConnectionImpl.java:32) - Configuration property file search order:
+    user.dir = D:\eclipse-workspace-us\FileNet_Out
+    user.home = C:\Users\svadl
+    java.home = C:\Program Files\Java\jdk-18.0.1
+2022-08-11 00:17:08,591  INFO [main] (ConnectionImpl.java:32) - Loading configuration resource: FileNetBuild.properties
+2022-08-11 00:17:08,617  INFO [main] (AuthnLogLog4j.java:25) - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial
+2022-08-11 00:17:08,618  WARN [main] (J2EEUtil.java:506) - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
+2022-08-11 00:17:09,691  INFO [main] (CEOperations.java:213) - 0 hr 0 min 1 sec	 End of getting Property Datatypes
+2022-08-11 00:17:10,004  INFO [main] (CEOperations.java:148) - Success Record No :1 Doc GUID : {F0148982-0000-CC11-9B44-2E95E92270D6}
+2022-08-11 00:17:10,005  INFO [main] (CEOperations.java:259) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:17:10,138  INFO [main] (CEOperations.java:148) - Success Record No :2 Doc GUID : {F0148982-0000-C836-BC52-22DDFFE21D49}
+2022-08-11 00:17:10,139  INFO [main] (CEOperations.java:259) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:17:10,139  INFO [main] (CEOperations.java:181) - Entered into getting Property Datatypes
+2022-08-11 00:17:10,232  INFO [main] (CEOperations.java:213) - 0 hr 0 min 0 sec	 End of getting Property Datatypes
+2022-08-11 00:17:10,288  INFO [main] (CEOperations.java:148) - Success Record No :3 Doc GUID : {F0148982-0000-CC57-AB4E-369865142997}
+2022-08-11 00:17:10,289  INFO [main] (CEOperations.java:259) - into writeCSV : D:\eclipse-workspace-us\FileNet_Out\successCSV_1.csv
+2022-08-11 00:17:10,289  INFO [main] (CEOperations.java:171) - Total time commiting documents to filenet : 0 hr 0 min 1 sec
+3 Documents
+2022-08-11 00:17:10,289  INFO [main] (CEOperations.java:172) - Successfullrecords Count : 3
+2022-08-11 00:17:10,289  INFO [main] (CEOperations.java:173) - failureCount Count : 0
+2022-08-11 00:17:10,289  INFO [main] (MainProgram.java:38) - CSV Data size : 3
+2022-08-11 00:17:10,289  INFO [main] (MainProgram.java:51) - Total time taken for processing : D:\eclipse-workspace-us\FileNet_Out\inputcsv.csv
+0 hr 0 min 1 sec
+2022-08-11 00:17:10,290  INFO [main] (MainProgram.java:53) - 
+*********************************
+

@@ -1,0 +1,4 @@
+Doc_Class,loanNumber,DocumentTitle,Obligor,Folder Filed In,FilePath
+Test,Supervisor_1,Test_1,obligor_1,Retail/AOF NON IMG,{20108482-0000-CB1A-AAF0-E3B05435B5C9}
+Test,Supervisor_2,Test_2,obligor_2,Retail/AOF NON IMG,{20108482-0000-CB1A-AAF0-E3B05435B5C9}
+Document,,Test_3,,Retail/AOF NON IMG,C:/Users/svadl/Downloads/websocket.pdf

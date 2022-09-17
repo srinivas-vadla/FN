@@ -1,0 +1,6 @@
+Doc_Class,Prop_DisplayName,Prop_SymbolicName,Prop_Description,Datatype,Cardinality,isRequired_on_Class,length,RequiredClassID
+Test,DisplayName,SymbName,Desc,String,Single,TRUE,40,
+Test,Bool Prop,BoolProp,bool,Boolean,Single,FALSE,,
+Test,Int Prop,IntProp,Integer,Integer,Single,FALSE,1250,
+Test,ObjProp,ObjProp,Object,Object,Single,FALSE,,{20108482-0000-CB1A-AAF0-E3B05435B5C9}
+Test,DateProp,DateProp,Datetime,DateTime,Single,FALSE,,

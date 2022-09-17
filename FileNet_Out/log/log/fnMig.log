@@ -1,0 +1,7 @@
+2022-08-10 00:09:17,214  INFO [main] (ConnectionImpl.java:32) - Configuration property file search order:
+    user.dir = D:\eclipse-workspace-us\FileNet_Out
+    user.home = C:\Users\svadl
+    java.home = C:\Program Files\Java\jdk-18.0.1
+2022-08-10 00:09:17,239  INFO [main] (ConnectionImpl.java:32) - Loading configuration resource: FileNetBuild.properties
+2022-08-10 00:09:17,271  INFO [main] (AuthnLogLog4j.java:25) - [J2EEType] Detecting app server : tried to get InitialContext but that did not work so will try other method; message from trial: Need to specify class name in environment or system property, or in an application resource file: java.naming.factory.initial
+2022-08-10 00:09:17,272  WARN [main] (J2EEUtil.java:506) - The code has NOT detected a need to introduce specific application server logic and is defaulting to using standard J2EE calls
