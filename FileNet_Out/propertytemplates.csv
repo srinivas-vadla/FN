@@ -2,5 +2,10 @@ Doc_Class,Prop_DisplayName,Prop_SymbolicName,Prop_Description,Datatype,Cardinali
 Test,DisplayName,SymbName,Desc,String,Single,TRUE,40,
 Test,Bool Prop,BoolProp,bool,Boolean,Single,FALSE,,
 Test,Int Prop,IntProp,Integer,Integer,Single,FALSE,1250,
-Test,ObjProp,ObjProp,Object,Object,Single,FALSE,,{20108482-0000-CB1A-AAF0-E3B05435B5C9}
-Test,DateProp,DateProp,Datetime,DateTime,Single,FALSE,,
+Test,ObjProp,ObjProp,Object,Object,Single,FALSE,,{01A3A8C2-7AEC-11D1-A31B-0020AF9FBB1C}
+Test,DateProp,DateProp,Integer,Integer,Single,FALSE,,
+Test,DatePropList,DatePropList,Integer,Integer,List,FALSE,,
+Test,Binary,Binary,Binary,Binary,List,FALSE,,
+Test,BinarySingle,BinarySingle,Binary,Binary,Single,FALSE,,
+Test,FloatProp,FloatProp,Float,Float,Single,FALSE,1250.12,
+Test,FloatProp List,FloatPropList,Float,Float,List,FALSE,1250,

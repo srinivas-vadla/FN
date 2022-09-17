@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import com.filenet.api.admin.ClassDefinition;
 import com.filenet.api.admin.LocalizedString;
 import com.filenet.api.admin.PropertyDefinition;
+import com.filenet.api.admin.PropertyDefinitionFloat64;
 import com.filenet.api.admin.PropertyDefinitionInteger32;
 import com.filenet.api.admin.PropertyDefinitionObject;
 import com.filenet.api.admin.PropertyDefinitionString;
@@ -36,6 +37,8 @@ public class CreatePropertyTemplates {
 	private static String boolDatatype = bundle.getString("BooleanDatatype");
 	private static String objDatatype = bundle.getString("ObjectDatatype");
 	private static String datetimeDatatype = bundle.getString("DateTimeDatatype");
+	private static String floatDatatype = bundle.getString("floatDatatype");
+	private static String binaryDatatype = bundle.getString("binaryDatatype");
 	private static String cardinality_Single = bundle.getString("Cardinality_Sigle");
 	private static String cardinality_List = bundle.getString("Cardinality_List");
 	private static ArrayList<String> propList = new ArrayList<String>();
@@ -79,7 +82,7 @@ public class CreatePropertyTemplates {
 				  		 propTemplate = pdc.createProperty(os, propData);
 //				  		propTemplate.set_Settability(PropertySettability.READ_WRITE);
      				} else {
-     					 System.out.println("property already Available");
+     					 System.out.println("property already Available: "+propData.getPropSymbolicName());
 					}
      				if(classDef!=null && propDefs !=null && propTemplate!= null) {
      					if(propData.getDataType().equalsIgnoreCase(strDatatype)) {
@@ -98,6 +101,14 @@ public class CreatePropertyTemplates {
      							propDefs.add(newPropDef);     							
      						}
      						
+     					}else if(propData.getDataType().equalsIgnoreCase(floatDatatype)) {
+     						PropertyDefinitionFloat64 newPropDef = (PropertyDefinitionFloat64) propTemplate.createClassProperty();
+     						newPropDef.set_IsValueRequired(propData.getIsRequired_on_Class());
+     						newPropDef.set_PropertyMaximumFloat64(propData.getFloatLength());
+     						if(!propList.contains(propData.getPropSymbolicName())) {
+     							propDefs.add(newPropDef);     							
+     						}
+     						
      					}else if(propData.getDataType().equalsIgnoreCase(objDatatype)) {
      						PropertyDefinitionObject newPropDef = (PropertyDefinitionObject) propTemplate.createClassProperty();
      						newPropDef.set_IsValueRequired(propData.getIsRequired_on_Class());
@@ -109,7 +120,7 @@ public class CreatePropertyTemplates {
      					}else {
      						PropertyDefinition newPropDef = propTemplate.createClassProperty();
      						newPropDef.set_IsValueRequired(propData.getIsRequired_on_Class());
-     						
+     						System.out.println(propData.getPropSymbolicName()+" available: "+propList.contains(propData.getPropSymbolicName()));
      						if(!propList.contains(propData.getPropSymbolicName())) {
      							propDefs.add(newPropDef);     							
      						}
@@ -154,10 +165,14 @@ public class CreatePropertyTemplates {
 				newPropTemplate = Factory.PropertyTemplateInteger32.createInstance(os);	    	
 			}else if(dataType.equalsIgnoreCase(boolDatatype)) {
 				newPropTemplate = Factory.PropertyTemplateBoolean.createInstance(os);	    	
-			}if(dataType.equalsIgnoreCase(objDatatype)) {
+			}else if(dataType.equalsIgnoreCase(objDatatype)) {
 				newPropTemplate = Factory.PropertyTemplateObject.createInstance(os);	    	
-			}if(dataType.equalsIgnoreCase(datetimeDatatype)) {
+			}else if(dataType.equalsIgnoreCase(datetimeDatatype)) {
 				newPropTemplate = Factory.PropertyTemplateDateTime.createInstance(os);	    	
+			}else if(dataType.equalsIgnoreCase(floatDatatype)) {
+				newPropTemplate = Factory.PropertyTemplateFloat64.createInstance(os);	    	
+			}else if(dataType.equalsIgnoreCase(binaryDatatype)) {
+				newPropTemplate = Factory.PropertyTemplateBinary.createInstance(os);	    	
 			}
 			if(cardinality.equalsIgnoreCase(cardinality_Single)) {
 				newPropTemplate.set_Cardinality (Cardinality.SINGLE);	    	

@@ -14,6 +14,7 @@ public class PropTemplates {
 	 private  String dataType;
 	 private String cardinality;
 	 private  int length;
+	 private Double floatLength;
 	 private boolean isRequired_on_Class;
 	 private Id requiredClassID;
 	 public String getCardinality() {
@@ -73,6 +74,13 @@ public class PropTemplates {
 	public void setRequired_on_Class(boolean isRequired_on_Class) {
 		this.isRequired_on_Class = isRequired_on_Class;
 	}
+	
+	public Double getFloatLength() {
+		return floatLength;
+	}
+	public void setFloatLength(Double floatLength) {
+		this.floatLength = floatLength;
+	}
 	public void setProperty(String propName, String val) {
 //		 Doc_Class	Prop_DisplayName	Prop_SymbolicName	Prop_Description	Datatype	Cardinality	isRequired_on_Class	length RequiredClassID
 		 if(propName.equalsIgnoreCase(bundle.getString("Doc_Class"))) {
@@ -96,13 +104,23 @@ public class PropTemplates {
 			}
 			 setIsRequired_on_Class(boolVal);
 		 }if(propName.equalsIgnoreCase(bundle.getString("length"))) {
+			 Double f = 0.0;
 			 int i= 0;
-			 try {
-				 i = Integer.parseInt(val);
-			 }catch (Exception e) {
-				System.out.println("Can not Convert to int:"+val);
-			}
+			 
+				 try {
+					 f = Double.parseDouble(val);
+				 }catch (Exception e) {
+					System.out.println("Can not convert to Float:"+val);
+				}
+			 
+				 try {
+						 i = Integer.parseInt(val);
+					 }catch (Exception e) {
+						System.out.println("Can not Convert to int:"+val);
+					}
+			 
 			 setLength(i);
+			 setFloatLength(f);
 		 }if(propName.equalsIgnoreCase(bundle.getString("RequiredClassID"))) {
 			 Id id = null;
 			 try {
