@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loanDetails>
+	<!-- we plan to create all loan folders in DocV prior to sending the documents to Sweep
+	but in case we miss any, set autocreate to TRUE -->
+    <folder autoCreate="true">
+        <loanNumber>#LoanNumber#</loanNumber>
+        <!-- Cabinet to create folders in if folder doesn't exist -->
+        <!-- Training (MLDSTEST2)
+        <parentFriendlyId>CB22041</parentFriendlyId>  -->
+        <!-- UAT (USBUAT) -->
+        <parentFriendlyId>CB18031</parentFriendlyId>  
+        <!-- Production (USBPROD) 
+        <parentFriendlyId>CB18041</parentFriendlyId>  -->
+    </folder>
+    <mailItem>
+        <channel>Union_Migration</channel>
+		<channel>#LoanNumber#</channel>
+        <!-- [LN] followed by Loan Number||[DT] subclass|#DocumentType#|doctitle value passed from Union Bank||(Optional) Some unique ID 
+		from IBM for troubleshooting-->
+        <subject>[LN]#LoanNumber#||[DT]#DocumentType#|Miscellaneous|Returned Mail||#ID#</subject>
+    </mailItem>
+	<!-- Will we route any documents from Sweep to ADR? -->
+    <documents useADR="false">
+		<!-- any file name; this will not be stored in DocV
+		 IBM will use the following filename pattern: 
+		<loanNumber>_<MUBFileNetGUID>_<USBDocTypeID>_<USBDocTypeName-replacing all special chars with underscores>-->
+        <document fileName="#LoanNumber#_#ID#_DOCID#Obligor#_#DocumentTitle#_#DocumentType#">
+			<!-- value from DocVelocity mapping table based on subclass, doctype & doctitle value passed from Union Bank -->
+            <typeDescription>Application Disclosures</typeDescription>
+			<!-- all Union Bank documents should have the doctype|doctitle value
+			passed from Union Bank in the document hint -->            
+            <hint>Subordinate-Fin|Miscellaneous|Returned Mail</hint>  
+			<!-- original create date/time from Union Bank -->          
+            <dateClientReceived>2014-11-28T12:31:16-0500</dateClientReceived>
+        </document>
+    </documents>
+</loanDetails>

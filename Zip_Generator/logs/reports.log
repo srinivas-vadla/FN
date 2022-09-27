@@ -1,0 +1,7 @@
+2022-09-27 22:36:29,560 [Worker.java:Batch No:4:92] - Batch No:4 - Total No of Records:7 : Total Success Count : 1 : Total Failure Count : 0
+2022-09-27 22:36:29,560 [Worker.java:Batch No:2:92] - Batch No:2 - Total No of Records:7 : Total Success Count : 3 : Total Failure Count : 0
+2022-09-27 22:36:29,560 [Worker.java:Batch No:3:92] - Batch No:3 - Total No of Records:7 : Total Success Count : 3 : Total Failure Count : 0
+2022-09-27 22:36:29,656 [Worker.java:Batch No:3:92] - Batch No:3 - Total No of Records:7 : Total Success Count : 4 : Total Failure Count : 0
+2022-09-27 22:36:29,659 [Worker.java:Batch No:2:92] - Batch No:2 - Total No of Records:7 : Total Success Count : 5 : Total Failure Count : 0
+2022-09-27 22:36:29,748 [Worker.java:Batch No:1:92] - Batch No:1 - Total No of Records:7 : Total Success Count : 6 : Total Failure Count : 0
+2022-09-27 22:36:29,806 [Worker.java:Batch No:1:92] - Batch No:1 - Total No of Records:7 : Total Success Count : 7 : Total Failure Count : 0
